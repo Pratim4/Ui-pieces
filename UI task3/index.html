@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      #grid {
+        display: grid;
+        height: 100%;
+        width: 100%;
+      }
+
+      .box {
+        background-color: white;
+        width: 50px;
+        height: 65px;
+        transition: background-color 0.5s;
+        box-shadow: 0 0 1px rgb(15, 14, 14);
+      }
+
+      .active {
+        background-color: rgb(198, 55, 242);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid"></div>
+
+    <script>
+      const grid = document.getElementById("grid");
+
+      let rows = 13;
+      let cols = 35;
+      let boxes = [];
+
+      grid.style.gridTemplateColumns = `repeat(${cols}, 50px)`;
+      grid.style.gridTemplateRows = `repeat(${rows}, 65px)`;
+
+      for (let i = 0; i < rows * cols; i++) {
+        const div = document.createElement("div");
+        div.classList.add("box");
+        grid.appendChild(div);
+        boxes.push(div);
+      }
+
+      function getBox(row, col) {
+        return boxes[row * cols + col];
+      }
+
+      function animate() {
+        boxes.forEach((box) => box.classList.remove("active"));
+
+        const usedCols = [];
+
+        for (let i = 0; i < rows; i++) {
+          let col = Math.floor(Math.random() * cols);
+
+          while (usedCols.includes(col)) {
+            col = Math.floor(Math.random() * cols);
+          }
+          usedCols.push(col);
+
+          const box = getBox(i, col);
+          box.classList.add("active");
+        }
+      }
+
+      animate();
+      setInterval(animate, 2000);
+    </script>
+  </body>
+</html>
