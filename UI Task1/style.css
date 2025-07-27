@@ -1,0 +1,408 @@
+:root {
+  --Base-Base-Black: #2b2b2b;
+  --Black-Black900: #414141;
+  --Base-Base-White: #fafafa;
+  --Gradient: linear-gradient(180deg, #1daa7e 0%, #1a8463 100%);
+  --Primary-Primary900: #0c4332;
+  --Primary-Primary500: #1da077;
+  --Secondary-Secondary500: #c33241;
+  --Secondary-Secondary50: #f9ebec;
+}
+@font-face {
+  font-family: "Nohemi";
+  src: url("./Fonts/Nohemi-Medium-BF6438cc57ddecd.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+#section3 {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  padding: 60px 0px 60px 0px;
+  flex-direction: column;
+  align-items: center;
+  background: var(--Base-Base-White, #fafafa);
+}
+
+.feature {
+  display: flex;
+  width: 1213px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+}
+.ftext {
+  display: flex;
+  width: 453px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.ftext1 {
+  align-self: stretch;
+  color: var(--Black-Black900, #414141);
+
+  /* Skillshikshya - 1/Desktop/Body/Feature Emphasis */
+  font-family: Outfit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.ftext2 {
+  align-self: stretch;
+
+  color: var(--Base-Base-Black, #2b2b2b);
+
+  /* Skillshikshya - 1/Mobile/Headings/Display 3 */
+  font-family: Nohemi;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.ftext2 span {
+  color: var(--Primary-Primary500, #1da077);
+
+  /* Skillshikshya - 1/Mobile/Headings/Display 3 */
+  font-family: " Nohemi", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+}
+.card {
+  display: flex;
+  height: 722px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40.171px;
+  align-self: stretch;
+}
+.cardline1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.card1 {
+  display: inline-flex;
+  padding: 58px 35px 58px 206px;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 30px;
+  background: #f45b5b;
+  display: flex;
+  width: 592px;
+  height: 341px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.cardcontent {
+  display: flex;
+  width: 351px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.cc1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  align-self: stretch;
+}
+.cc11 {
+  color: var(--Base-Base-White, #fafafa);
+  text-align: center;
+
+  /* Skillshikshya - 1/Mobile/Headings/Display 3 */
+  font-family: Nohemi;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+}
+.cc22 {
+  color: #fff;
+  text-align: center;
+
+  /* Skillshikshya - 1/Desktop/Body/Feature Emphasis */
+  font-family: Outfit;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.cc2 p {
+  align-self: stretch;
+  color: var(--Base-Base-White, #fafafa);
+  text-align: right;
+
+  /* Skillshikshya - 1/Desktop/Body/Highlight Standard */
+  font-family: Outfit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.card .img {
+  transition: ease-in-out;
+  animation: featureImage 2s linear infinite;
+}
+.card2 {
+  display: inline-flex;
+  padding: 58px 206px 58px 35px;
+  align-items: center;
+  border-radius: 30px;
+  background: #5492a0;
+  display: flex;
+  width: 592px;
+  height: 341px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card2img {
+  position: absolute;
+  top: 2px;
+  left: 353.28px;
+
+  z-index: 11;
+}
+
+.cardcontent2 {
+  display: flex;
+  width: 351px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+.cc2-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+.cc2-2 {
+  align-self: stretch;
+  color: var(--Base-Base-White, #fafafa);
+
+  /* Skillshikshya - 1/Desktop/Body/Highlight Standard */
+  font-family: Outfit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.card3 {
+  display: inline-flex;
+  padding: 58px 35px 58px 206px;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 30px;
+  display: flex;
+  width: 592px;
+  height: 341px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card3 img {
+  position: absolute;
+  right: 305.88px;
+  top: 93px;
+}
+.card1 img {
+  position: absolute;
+  top: 12px;
+  left: -79px;
+}
+.card4 {
+  display: inline-flex;
+  padding: 58px 206px 58px 35px;
+  align-items: center;
+  border-radius: 30px;
+  background: #5492a0;
+  display: flex;
+  width: 592px;
+  height: 341px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card4img {
+  position: absolute;
+  top: 50.09px;
+  left: 300.66px;
+}
+.hover:hover .card1 {
+  transform: translate(-800px);
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+   transition-delay: 1s;
+  transition: ease-in 0.3s, opacity 0.6s ease-in;
+  transition-duration: 0.6s;
+ 
+}
+.hover:hover .card2 {
+  transform: translate(-800px);
+  z-index: -1;
+  opacity: 0;
+  pointer-events: none;
+  transition-delay: 1s;
+
+  transition: ease-in 0.3s, opacity 0.6s ease-in;
+  transition-duration: 0.6s;
+}
+
+.left-arrow {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  top: 135px;
+  left: 0px;
+  padding: 10px;
+  border: #2b2b2b;
+  background-color: white;
+  box-shadow: 0 0 4px gray;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.right-arrow {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  top: 135px;
+  right: -592px;
+  padding: 10px;
+  border: #2b2b2b;
+  background-color: white;
+  box-shadow: 0 0 4px gray;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.backimg4 {
+  display: flex;
+  width: 592px;
+  height: 341px;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  animation: none;
+}
+
+.innercards1{
+    position: absolute; top:0 ;
+    display: none;
+  /* transition: opacity 1s ease; */
+}
+.innercards{
+    position: absolute; top: 0;
+    transition: transform 1s ease;
+}
+
+
+.innercards00 {
+  position: relative;
+  
+}
+.innercards11 {
+  position: relative;
+  /* z-index: -1; */
+  
+
+}
+
+@media (max-width: 900px) {
+  #section3 {
+    width: 100%;
+    height: auto;
+  }
+
+  .card1 {
+    width: 528px !important;
+    height: 326px !important;
+    margin-left: 30px;
+  }
+  .backimg4 {
+    width: 528px !important;
+    height: 326px !important;
+    margin-left: 30px;
+  }
+
+  .card2 {
+    width: 528px !important;
+    height: 326px !important;
+    margin-left: 30px;
+  }
+  .card3 {
+    width: 528px !important;
+    height: 326px !important;
+    margin-left: 30px;
+  }
+  .card4 {
+    width: 528px !important;
+    height: 326px !important;
+    margin-left: 30px;
+  }
+  .card3 .cardcontent {
+    padding-right: 20px;
+  }
+  .cardline1 {
+    order: 1;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin-top: 50px;
+  }
+  .card1svg {
+    height: 300px;
+    width: 300px;
+    top: 85px !important;
+  }
+  .card2img {
+    height: 400px !important;
+    width: 250px !important;
+    left: 300px !important;
+  }
+  .card3img {
+    height: 300px;
+    width: 300px;
+  }
+  .card4img {
+    height: 300px;
+    width: 300px;
+    top: 90px !important;
+    left: 280px !important;
+  }
+}
