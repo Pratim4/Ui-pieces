@@ -1,0 +1,31 @@
+:root{
+   --Base-Base-Black: #2B2B2B;
+   --Black-Black900:#414141;
+   --Base-Base-White: #FAFAFA;
+   --Gradient:linear-gradient(180deg, #1DAA7E 0%, #1A8463 100%);
+   --Primary-Primary900: #0C4332;
+   --Primary-Primary500: #1DA077;
+   --Secondary-Secondary500: #C33241;
+   --Secondary-Secondary50: #F9EBEC;
+
+}
+    @font-face {
+        font-family: 'Nohemi';
+        src: url('./Fonts/Nohemi-Medium-BF6438cc57ddecd.woff')format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 40px;
+}

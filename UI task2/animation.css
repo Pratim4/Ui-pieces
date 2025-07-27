@@ -1,0 +1,99 @@
+
+
+
+
+
+
+
+.mtm:hover .arrow1{
+     transition: ease-in-out;
+animation: arrow 2s linear infinite ;
+}
+.arrows{
+    transition: ease-in-out;
+animation: arrow 2s linear infinite ;
+}
+.arrowvat:hover .arrow1{
+      transition: ease-in-out;
+animation: arrow 2s linear infinite ;
+}
+.arrowvat:hover p{
+    color: #1DAA7E;
+}
+.mtm:hover button{
+    color: #1DAA7E;
+}
+
+@keyframes arrow {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(7px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+@keyframes click {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(7px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+.t22:hover .fplas{
+transform: translateY(15px);
+transition: ease-in-out 1.5s;
+
+}
+.t22:not(:hover) .fplas{
+transition: ease-in-out 1.5s;
+
+}
+.clickme{
+    position: absolute;
+    top: 0px;
+    right: 200px;
+    opacity: 0;
+    transition: ease-in-out opacity 0.8s;
+    animation: click 2s linear infinite ;
+    z-index: 17;
+
+
+}
+.t22:hover .clickme{
+    opacity: 1;
+
+}
+.rotateimg{
+    transform: rotate(100deg);
+    height: 60px;
+    width: 80px;
+
+}
+.click{
+        color: var(--Black-Black900, #414141);
+
+/* Skillshikshya - 1/Desktop/Body/Feature Standard */
+font-family: Outfit;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="section4.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  </head>
+  <body>
+    <!-- <div id="section4"> -->
+    <div class="trending">
+      <div class="trending1">
+        <div class="t11">
+          <p>Explore our classes and master trending skills!</p>
+        </div>
+        <div class="t12">Dive Into <span>What’s Hot Right Now!</span> 🔥</div>
+      </div>
+      <div class="trending2">
+        <div class="t21">
+          <div class="t22">
+            <div class="clickme">
+              <p class="click">Click Me!</p>
+              <img
+                src="./Images/image-removebg-preview (2).png"
+                alt=""
+                class="rotateimg"
+              />
+            </div>
+            <p class="fplas" style="right: 30px">+</p>
+            <div class="uc" style="gap: 90px" id="allcourse">
+              <div class="uc1" style="padding-right: 40px" id="acourse">
+                <h3>All Courses</h3>
+                <p>Courses you're powering through right now.</p>
+              </div>
+              <div class="uc2">23</div>
+            </div>
+          </div>
+          <p class="plas">+</p>
+
+          <div class="vac">
+            <p>View all Courses</p>
+            <img src="./Images/arrow-sm-right.png" alt="arrow" class="arrows" />
+          </div>
+
+          <div class="course-icon">
+            <img src="./Images/Frame (4).svg" alt="" />
+            <img src="./Images/Frame (5).svg" alt="" />
+            <img src="./Images/Group (13).svg" alt="" />
+            <img src="./Images/Group (14).svg" alt="" />
+          </div>
+
+          <div class="allcourse">
+            <div class="n23">
+              <p>23</p>
+            </div>
+            <div class="ac1">
+              <h3>All Courses</h3>
+              <p>courses you're powering through right now.</p>
+            </div>
+          </div>
+        </div>
+        <div class="t21">
+          <div class="t22">
+            <div class="clickme">
+              <p class="click">Click Me!</p>
+              <img
+                src="./Images/image-removebg-preview (2).png"
+                alt=""
+                class="rotateimg"
+              />
+            </div>
+            <p class="fplas">+</p>
+            <div class="uc">
+              <div class="uc1">
+                <h3>Upcoming Courses</h3>
+                <p>Exciting new courses waiting to boost your skills.</p>
+              </div>
+              <div class="uc2">05</div>
+            </div>
+          </div>
+          <p class="plas">+</p>
+
+          <div class="vac">
+            <p>View all Courses</p>
+            <img src="./Images/arrow-sm-right.png" alt="arrow" class="arrows" />
+          </div>
+
+          <div class="course-icon">
+            <img src="./Images/Frame (4).svg" alt="" />
+            <img src="./Images/Frame (5).svg" alt="" />
+            <img src="./Images/Group (13).svg" alt="" />
+            <img src="./Images/Group (14).svg" alt="" />
+          </div>
+
+          <div class="allcourse">
+            <div class="n23" style="padding-right: 20px">
+              <p>05</p>
+            </div>
+            <div class="ac1">
+              <h3 style="text-wrap: nowrap">Upcoming Courses</h3>
+              <p>Exciting new course waiting to boost your skills.</p>
+            </div>
+          </div>
+        </div>
+        <div class="t21">
+          <div class="t22">
+            <div class="clickme">
+              <p class="click">Click Me!</p>
+              <img
+                src="./Images/image-removebg-preview (2).png"
+                alt=""
+                class="rotateimg"
+              />
+            </div>
+            <p class="fplas" style="right: 30px">+</p>
+            <div class="uc" style="gap: 70px">
+              <div class="uc1" style="padding-right: 0px">
+                <h3>Ongoing Courses</h3>
+                <p>Currently happening-don't missout on the action!</p>
+              </div>
+              <div class="uc2" "> 10
+            </div>
+          </div>
+        </div>
+        <p class="plas">+</p>
+
+        <div class="vac">
+          <p>View all Courses</p>
+          <img src="./Images/arrow-sm-right.png" alt="arrow" class="arrows" />
+        </div>
+
+        <div class="course-icon">
+          <img src="./Images/Frame (4).svg" alt="" />
+          <img src="./Images/Frame (5).svg" alt="" />
+          <img src="./Images/Group (13).svg" alt="" />
+          <img src="./Images/Group (14).svg" alt="" />
+        </div>
+
+        <div class="allcourse">
+          <div class="n23">
+            <p>10</p>
+          </div>
+          <div class="ac1">
+            <h3 style="text-wrap: nowrap">Ongoing Courses</h3>
+            <p>Currently happening-don't missout on the action!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const cards = document.querySelectorAll(".t21");
+      cards[0].classList.add("active");
+      cards.forEach((card, index) => {
+        card.addEventListener("click", () => {
+          if (card.classList.contains("active")) return;
+          cards.forEach((c) => c.classList.remove("active"));
+          card.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
