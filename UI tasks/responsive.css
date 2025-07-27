@@ -1,0 +1,91 @@
+
+@media (max-width: 800px) {
+
+
+#section8{
+  margin-top: -200px !important;
+
+}
+.testimonial{
+pointer-events: none !important;
+}
+.monial2{
+  left: 100px !important;
+}
+}
+ @media (max-width: 1200px) {
+  .testimonial {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .innertmnl {
+    position: static;
+    width: 90%;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .vat h3,
+  .vat span {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .arrowvat {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .arrowvat p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .innertmnl {
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .vat p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .vat h3,
+  .vat span {
+    font-size: 24px;
+  }
+
+  .testover {
+    display: none !important; /* hide fancy hovers on small screens */
+  }
+
+  .monial1, .monial2, .monial3, .monial4, .monial5, .monial8,
+  .gif1, .gif2, .gif3, .gif4 {
+    display: none; /* optionally hide floating images on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .vat h3,
+  .vat span {
+    font-size: 20px;
+  }
+
+  .arrowvat p {
+    font-size: 14px;
+  }
+
+  .testimonial {
+    padding: 10px;
+  }
+}
